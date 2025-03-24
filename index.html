@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZackDaQuack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="storage/favicon.ico">
+    <script src="https://kit.fontawesome.com/c6f293ea1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background"></div>
+    <section id="profile">
+        <div class="center-box">
+            <audio id="audio_player" controls hidden autoplay></audio>
+            <div class="container">
+                <div class="image-wrapper">
+                    <img class="profile no-highlight" src="profile_pic.png">
+                </div>
+                <h1 class="glow username no-highlight">ZackDaQuack</h1>
+                <div class="socials">
+                    <a href="https://discord.com/users/717854704335585281" target="_blank"><i class="fa-brands fa-discord fa-2x social_icon glow"></i></a>
+                    <a href="https://www.ipetitions.com/petition/demote-moon" target="_blank"><i class="fa-solid fa-moon fa-2x social_icon glow"></i></a>
+                    <i class="fa-brands fa-facebook fa-2x social_icon glow"></i>
+                    <a href="https://only-fans.uk/zack" target="_blank"><i class="fa-solid fa-face-flushed fa-2x social_icon glow"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="player bottom-box">
+            <div class="audio-player">
+                <img src="" alt="Song Image" class="song-image no-highlight">
+                <div class="song-info">
+                    <h2 class="song-title glow no-highlight song-text">Song Title</h2>
+                    <h4 class="author glow no-highlight song-text">Author Name</h4>
+                    <div class="progress">
+                        <progress id="song-progress" value="0" max="100"></progress>
+                        <h5 class="progress_text glow song-text no-highlight">playback error</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <video id="rick" loop width="100%" style="display: none;">
+        <source src="storage/rick.mp4" type="video/mp4">
+        Dangit. Update your browser to get rickrolled lol.
+    </video>  
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <h1 class="enter-overlay no-highlight">click to enter!</h1>
+        </div>
+    </div>
+    <section id="scripts">
+        <script src="main.js"></script>
+    </section>
+</body>
+</html>

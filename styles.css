@@ -1,0 +1,227 @@
+/* Main Backgrounds */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.background {
+    background-image: url('https://wallpapers.com/images/hd/pixel-background-u2jnye2lgq0gv7h2.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .97);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.overlay.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+/* Text */
+h1, .song-text {
+    color: #ffffff;
+}
+
+.progress_text {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.song-title {
+    margin-bottom: 5px;
+}
+
+.author {
+    margin-top: 0px;
+}
+
+.username {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.username:hover {
+    color: #2B8C44;
+    transform: scale(1.05);
+}
+
+
+
+/* Containers */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+.center-box,
+.bottom-box {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.bottom-box {
+    transform: translate(-50%, 175%);
+    height: 100px;
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 15%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.song-info {
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#song-progress {
+    appearance: none;
+    overflow: hidden;
+    height: 15px;
+    width: 150px;
+    background-color: #2B8C44;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+#song-progress::-webkit-progress-value {
+    background-color: #2B8C44;
+    border-radius: 15px;
+}
+
+.socials {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+
+}
+
+.no-highlight{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+}
+
+
+
+/* Buttons */
+.social_icon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 15px;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social_icon:hover {
+    color: #2B8C44;
+    transform: scale(1.1);
+}
+
+
+
+/* Universal */
+.glow {
+    animation: glow 4s infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1.5);
+        opacity: 0.9;
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        opacity: 1;
+    }
+}
