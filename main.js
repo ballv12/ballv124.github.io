@@ -22,10 +22,10 @@ console.log(`
 const defaultSong = 1;
 const audioData = [
     {
-        url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874507704025128/sitting_ducks.mp3',
-        author: 'Smile Empty Soul',
-        title: 'Sitting Ducks',
-        titleUrl: 'images/sitting_ducks.jpeg'
+        url: 'Music/Knee_Socks.mp3',
+        author: 'Arctic Monkeys',
+        title: 'Knee Socks',
+        titleUrl: 'images/Knee_Socks.jpeg'
     },
     {
         url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874506542203021/my_life_as_a_duck.mp3',
@@ -33,42 +33,7 @@ const audioData = [
         title: 'My Life As A Duck',
         titleUrl: 'images/my_life_as_a_duck.jpeg'
     },
-    {
-        url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874506126954537/march_of_the_sinister_ducks.mp3',
-        author: 'The Sinister Ducks',
-        title: 'March Of The Sinister Ducks - Remastered',
-        titleUrl: 'images/sinister_ducks.jpeg'
-    },
-    {
-        url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874505543950376/i_want_a_new_duck.mp3',
-        author: '"Weird Al" Yankovic',
-        title: 'I Want a New Duck',
-        titleUrl: 'images/new_duck.jpeg'
-    },
-    {
-        url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874505141305424/duck_song.mp3',
-        author: 'Bryant Oden',
-        title: 'Duck Song',
-        titleUrl: 'images/duck_song.jpeg'
-    },
-    {
-        url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874508035362876/three_little_birds.mp3',
-        author: 'Bob Marley and the Wailers',
-        title: 'Three Little Birds',
-        titleUrl: 'images/little_birds.jpeg'
-    },
-    {
-        url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874506944847933/nice_weather_for_ducks.mp3',
-        author: 'Lemon Jelly',
-        title: 'Nice Weather for Ducks',
-        titleUrl: 'images/nice_weather.jpeg'
-    },
-    {
-        url: 'https://cdn.discordapp.com/attachments/717855230301306944/1190874506944847933/nice_weather_for_ducks.mp3',
-        author: 'Lemon Jelly',
-        title: 'Nice Weather for Ducks',
-        titleUrl: 'images/nice_weather.jpeg'
-    }
+    
 ];
 
 const audioElement = document.getElementById('audio_player');
